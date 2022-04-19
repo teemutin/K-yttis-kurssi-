@@ -4,18 +4,7 @@
 #include <string.h>
 #include <stdarg.h>
 #define MAX_SIZE 1000
-/*
- void reverse(FILE* input) {
-    char line[MAX_SIZE];
-    if( fgets(line, MAX_SIZE, input) == NULL )
-        return;
-    else {
-        reverse_print(input);
-        printf(line);
-    }
-    return;
-}
-*/
+
 //Print the file contents to terminal
 //Use recursion to loop through the whole file
 void reverse1(FILE* input) {
@@ -99,7 +88,7 @@ int main( int argc, char *argv[] )  {
       printf("The arguments supplied is %s and %s\n", argv[1],argv[2]);
       printf("Input and output files given, will print to file\n");
       
-      // Open the file
+      // Open the files
       strcpy(inputfile,argv[1]);
       strcpy(outputfile,argv[2]);
       input = fopen(inputfile,"r");
